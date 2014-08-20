@@ -15,7 +15,9 @@ pip install -U fig
 
 wget -O - http://gaudi.io/apt/gaudi.gpg.key | sudo apt-key add -
 echo "deb http://gaudi.io/apt/ precise main" | sudo tee -a /etc/apt/sources.list
- 
-sudo apt-get update
-sudo apt-get install gaudi -y
 
+apt-get update
+apt-get install gaudi -y
+
+# Apache Mesos
+apt-get install python-dev python-boto libcurl4-nss-dev libsasl2-dev autoconf libtool
